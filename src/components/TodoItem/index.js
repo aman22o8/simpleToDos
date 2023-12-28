@@ -1,21 +1,28 @@
 // Write your code here
 import './index.css'
+import {Component} from 'react'
 
-const TodoItem = props => {
-  const {listItems, deleteitem} = props
-  const {id, title} = listItems
-  const deletefun = () => {
+class TodoItem extends Component {
+  deletefun = () => {
+    const {listItems, deleteitem} = this.props
+    const {id} = listItems
+
     deleteitem(id)
   }
 
-  return (
-    <li className="each_item">
-      <p className="desc">{title}</p>
-      <button type="button" className="delete_btn" onClick={deletefun}>
-        Delete
-      </button>
-    </li>
-  )
+  render() {
+    const {listItems} = this.props
+    const {title} = listItems
+
+    return (
+      <li className="each_item">
+        <p className="desc">{title}</p>
+        <button type="button" className="delete_btn" onClick={this.deletefun}>
+          Delete
+        </button>
+      </li>
+    )
+  }
 }
 
 export default TodoItem
