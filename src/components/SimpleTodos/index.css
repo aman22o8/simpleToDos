@@ -1,0 +1,25 @@
+/* Write your CSS here */
+.main_container {
+  background-color: #ffc2a0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.card_container {
+  border-radius: 10px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 55vw;
+}
+.main_heading {
+  font: normal normal 700 45px 'Roboto';
+  color: #ff8542;
+}
+.list_container {
+  list-style-type: none;
+  width: 100vh;
+}

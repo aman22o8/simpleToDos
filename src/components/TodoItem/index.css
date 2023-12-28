@@ -1,0 +1,17 @@
+/* Write your CSS here */
+.each_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.desc {
+  font: normal normal 500 15px 'Roboto';
+  color: #000000;
+}
+.delete_btn {
+  border-radius: 7px;
+  border: solid 1px #ff0b37;
+  background-color: #ffffff;
+  font: normal normal 400 15px 'Roboto';
+  color: #ff0b37;
+}
